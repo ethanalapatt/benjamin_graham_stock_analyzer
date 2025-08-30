@@ -11,7 +11,6 @@ from urllib.parse import urljoin
 
 from .config import Config
 
-
 class SECFilingProvider:
     """Fetch SEC filing URLs and metadata for audit trails"""
     
@@ -231,7 +230,7 @@ class SECFilingProvider:
                     'Capped growth rates at 5% in DCF',
                     'Elevated discount rates (10-12%)'
                 ],
-                'graham_criteria': [
+                'graham_criteria_for_stocks': [
                     'Current ratio >= 2.0',
                     'Debt/equity <= 0.5',
                     'PE <= 15.0',
