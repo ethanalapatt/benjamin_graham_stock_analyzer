@@ -61,21 +61,3 @@ def test_basic_functionality():
     score = 0
     if metrics.current_ratio >= 2.0:
         score += 20
-    if metrics.debt_to_equity <= 0.5:
-        score += 15
-    if metrics.pe_ratio <= 15.0:
-        score += 15
-    if metrics.pb_ratio <= 1.5:
-        score += 10
-    
-    print(f"✓ Graham score calculation: {score}/100")
-    
-    print("\n🎉 All basic tests passed!")
-    print("\nTo run the full screener:")
-    print("python graham_scan.py --dry_run --top 5")
-    print("\nTo run unit tests:")
-    print("pytest tests/")
-
-
-if __name__ == "__main__":
-    test_basic_functionality()
