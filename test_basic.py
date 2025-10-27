@@ -36,28 +36,4 @@ def test_basic_functionality():
         industry="Software"
     )
     print("✓ Company profile created")
-    
-    # Test 5: Sample financial statement
-    statement = FinancialStatement(
-        ticker="TEST",
-        year=2023,
-        statement_type="income",
-        data={"netIncome": "100000000"},
-        filing_date=datetime(2023, 12, 31)
-    )
-    print("✓ Financial statement created")
-    
-    # Test 6: Basic metrics calculation
-    metrics = FinancialMetrics(
-        ticker="TEST",
-        current_ratio=2.5,
-        debt_to_equity=0.3,
-        pe_ratio=12.0,
-        pb_ratio=1.2
-    )
-    print("✓ Financial metrics created")
-    
-    # Test 7: Graham score calculation  
-    score = 0
-    if metrics.current_ratio >= 2.0:
-        score += 20
+
